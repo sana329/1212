@@ -20,7 +20,7 @@ jobs:
    run:sudo apt update && sudo apt install -y build-essential
 
   -name: Build project
-   run: make
+   run:make
 
   -name: Run executable
-   run: ./main
+   run:./main
