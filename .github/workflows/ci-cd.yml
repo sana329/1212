@@ -13,14 +13,14 @@ jobs:
 
 
   steps:
-  -name: Checkout code
+  -name:Checkout code
    uses:actions/checkout@v3
 
-  -name: Instal GCC
+  -name:Instal GCC
    run:sudo apt update && sudo apt install -y build-essential
 
-  -name: Build project
+  -name:Build project
    run:make
 
-  -name: Run executable
+  -name:Run executable
    run:./main
